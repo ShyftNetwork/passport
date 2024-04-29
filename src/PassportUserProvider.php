@@ -83,4 +83,15 @@ class PassportUserProvider implements UserProvider
     {
         return $this->providerName;
     }
+
+    /**
+     * Test for the laravel11
+     *
+     * @return string
+     */
+    public function rehashPasswordIfRequired(Authenticatable $user, array $credentials, bool $force = false)
+    {
+        // $this->provider->rehashPasswordIfRequired($user, $credentials, $force);
+        return [];
+    }
 }
